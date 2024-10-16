@@ -12,12 +12,13 @@ namespace MVPPractice.Presenters
     public class ProductPresenter : IProductPresenter
     {
         private readonly IProductView _view;
-        private readonly IProductRepository _repository;
+        private readonly ProductRepository _repository;
 
-        public ProductPresenter(IProductView view, IProductRepository repository)
+
+        public ProductPresenter(IProductView view)
         {
             _view = view;
-            _repository = repository;
+            _repository = new ProductRepository();
         }
 
         public void LoadProductData()

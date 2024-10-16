@@ -10,8 +10,7 @@ namespace MVPPractice
         public Form1()
         {
             InitializeComponent();
-            IProductRepository repository = new ProductRepository();
-            _presenter = new ProductPresenter(this, repository);
+            _presenter = new ProductPresenter(this);
             _presenter.LoadProductData();
         }
 
