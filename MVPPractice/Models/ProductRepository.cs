@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVPPractice.Models
 {
-    internal class ProductRepository 
+    internal class ProductRepository
     {
         public Product GetProduct()
         {

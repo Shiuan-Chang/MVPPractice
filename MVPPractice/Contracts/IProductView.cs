@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MVPPractice.Contracts
+    // Contract: 定義做到那些事情並列出來做統整
 {
     //使用介面來定義 View 和 Presenter 之間的溝通
     public interface IProductView

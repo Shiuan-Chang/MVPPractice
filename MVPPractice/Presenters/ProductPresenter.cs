@@ -12,7 +12,7 @@ namespace MVPPractice.Presenters
     public class ProductPresenter : IProductPresenter
     {
         private readonly IProductView _view;
-        private readonly ProductRepository _repository;
+        private readonly ProductRepository _repository;//不隨著資料庫的形式改變而改變model
 
 
         public ProductPresenter(IProductView view)
